@@ -2,7 +2,7 @@
   "name": "ticket_system",
   "license": "0BSD",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
@@ -19,5 +19,11 @@
     "react-native-safe-area-context": "~5.6.0",
     "react-native-web": "^0.21.0"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@types/react": "^19.2.6",
+    "@types/react-dom": "^19.2.3",
+    "@types/react-native": "^0.72.8",
+    "typescript": "^5.9.3"
+  }
 }

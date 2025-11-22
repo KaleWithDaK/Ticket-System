@@ -26,11 +26,10 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "4b7d44b2-9671-4a78-b98f-362cf8140a9b"
-      }
-    },
-    "owner": "kalewithdak"
+    "owner": "kalewithdak",
+    "expo": {
+      "scheme": "ticket_system",
+      "platforms": ["ios", "android"]
+}
   }
 }

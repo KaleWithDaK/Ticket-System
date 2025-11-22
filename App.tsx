@@ -9,9 +9,10 @@ export default function App() {
       <SafeAreaView style={styles.container}>  
         
         <Pressable 
-        onPressOut={console.log("LOGIN pressed")}
-        style={styles.loginButt}>
-          <Text style={styles.loginText}>LOGIN</Text>
+        onPressOut={() => console.log("LOGIN pressed")}
+        style={styles.loginButt}> 
+
+          <Text></Text>
         </Pressable>
     
       </SafeAreaView>
