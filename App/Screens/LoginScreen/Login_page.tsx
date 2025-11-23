@@ -1,8 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TouchableOpacity, View, TextInput, KeyboardAvoidingView, ScrollView, Platform} from 'react-native';
 import { SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../Navigation';
 
-export default function App() {
+type LoginScreenProp = NativeStackNavigationProp<RootStackParamList, 'loginPage'>;
+
+export default function LoginPage() {
+
+  const navigation = useNavigation<LoginScreenProp>();
+
+  const login = () => navigation.navigate("homePage");
 
   return (
     <SafeAreaProvider>
@@ -31,7 +39,7 @@ export default function App() {
         ></TextInput>
         
         <TouchableOpacity 
-        onPressOut={() => console.log("LOGIN pressed")}
+        onPressOut={login}
         style={styles.loginButt}> 
 
           <Text style={styles.loginText}>LOGIN</Text>

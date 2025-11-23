@@ -1,5 +1,6 @@
 import { registerRootComponent } from 'expo';
+import AppNav from './App/Navigation'
 
-import App from './Login_page';
+import LoginPage from './App/Screens/LoginScreen/Login_page';
 
-registerRootComponent(App);
+registerRootComponent(AppNav);
