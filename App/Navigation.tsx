@@ -1,5 +1,5 @@
 import React from "react";
-import { createStaticNavigation, NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import HomePage from "./Screens/HomeScreen/Home_page";
 import LoginPage from "./Screens/LoginScreen/Login_page";
@@ -12,8 +12,6 @@ export type RootStackParamList = {
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
-
-const { Navigator, Screen } = createNativeStackNavigator();
 
 const AppNav = () => (
     <NavigationContainer>
