@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "IsPk6rxkAuY=",
+  "success": true,
+  "projectFilePath": "/home/kale/Documents/Ticket_System/Backend/Backend.csproj",
+  "expectedPackageFiles": [
+    "/home/kale/.nuget/packages/microsoft.aspnetcore.openapi/10.0.0/microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
+    "/home/kale/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
