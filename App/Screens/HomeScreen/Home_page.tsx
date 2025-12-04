@@ -23,6 +23,7 @@ export default function HomePage(){
 
 
      const theme = isLight ? lightStyles : darkStyles;
+     const icon = isLight ? require("../../../assets/sun_icon.png") : require("../../../assets/moon_icon.png");
 
     return (
         <SafeAreaProvider>
@@ -35,7 +36,7 @@ export default function HomePage(){
                     style={theme.themeButt}>
                         <Image
                         style={theme.ButtImage}
-                        source={require("../../../assets/sun_icon.png")}>
+                        source={icon}>
                         
                         </Image>
                     </TouchableOpacity>
@@ -45,7 +46,7 @@ export default function HomePage(){
                     style={theme.logoutButt}>
                         <Image
                         style={theme.ButtImage}
-                        source={require('../../../assets/logout_icon.png')}/>
+                        source={require("../../../assets/logout_icon.png")}/>
                     </TouchableOpacity>
                 </View>
                 <View 
