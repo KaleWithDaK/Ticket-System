@@ -6,7 +6,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../Navigation';
 import { darkStyles , lightStyles } from './Home_page_style'
 
-type HomeScreenProp = NativeStackNavigationProp<RootStackParamList, 'loginPage', 'checkinPage'>;
+type HomeScreenProp = NativeStackNavigationProp<RootStackParamList, 'homePage'>;
 
 
 export default function HomePage(){
@@ -16,6 +16,8 @@ export default function HomePage(){
      const logout = () => navigation.pop();
 
      const toCheckIn = () => navigation.navigate("checkInPage");
+     const toCheckOut = () => navigation.navigate("checkOutPage");
+     const toStats = () => navigation.navigate("statsPage");
 
      const [isLight, setIsLight] = useState(false);
 
@@ -59,11 +61,13 @@ export default function HomePage(){
                         <Text style={theme.textInButt}>Clock-In</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
-                    style={theme.clockOutButt}>
+                    style={theme.clockOutButt}
+                    onPress={toCheckOut}>
                         <Text style={theme.textInButt}>Clock-Out</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
-                    style={theme.statsButt}>
+                    style={theme.statsButt}
+                    onPress={toStats}>
                         <Text style={theme.textInButt}>Stats</Text>
                     </TouchableOpacity>
                 </View>

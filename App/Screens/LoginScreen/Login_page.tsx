@@ -3,6 +3,7 @@ import { SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../Navigation';
+import { styles } from './Login_page_style'
 
 type LoginScreenProp = NativeStackNavigationProp<RootStackParamList, 'loginPage'>;
 
@@ -51,46 +52,4 @@ export default function LoginPage() {
     
   );
 }
-
-const styles = StyleSheet.create({
-  container:{
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1
-  },
-
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#585858ff'
-  },
-
-  loginButt:{
-  backgroundColor: "#5956ffff",
-  borderRadius: 20,
-  paddingHorizontal: 100,
-  paddingVertical: 15,
-  alignItems: 'center',
-  marginTop: 50
-  },
-  
-  loginText:{
-    color: 'white',
-    fontWeight:'bold',
-    fontSize: 20
-  },
-
-  emailField: {
-    alignContent: 'flex-start',
-    height: 60,
-    margin: 12,
-    width: 300,
-    borderWidth: 2,
-    borderColor: '#ffffffbe',
-    color: '#fff',
-    fontWeight: '600',
-    borderRadius: 8,
-    paddingLeft: 15
-  }
-
-});
 

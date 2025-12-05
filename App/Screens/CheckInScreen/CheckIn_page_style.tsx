@@ -36,6 +36,6 @@ export const styles = StyleSheet.create({
 
     buttText:{
         fontSize: 18,
-        tintColor: '#000000e1'
+        tintColor: '#000000e1'      
     }
 })
